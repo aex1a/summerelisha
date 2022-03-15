@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <title>love u korik</title>
+    <link rel="stylesheet" href="style.css">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<body>
+    
+    <section>
+        <img src="assets/bg.jpg" id="bg">
+        <img src="assets/moon.png" id="moon">
+        <img src="assets/mountain.png" id="mountain">
+        <img src="assets/road.png" id="road">
+        <h2 id="text">HELLO</h2>
+    </section>
+
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer>
+        
+    </script>
+<div class="elfsight-app-f03b531e-f1f6-4035-8d7b-b6cec9c306a3"></div>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+</body>
+</head>
+</html>
